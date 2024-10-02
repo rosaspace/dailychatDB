@@ -1,0 +1,1 @@
+web: gunicorn dailychatdb.wsgi
