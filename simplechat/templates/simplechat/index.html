@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日英语对话</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .conversation {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .english {
+            font-weight: bold;
+            color: #333;
+        }
+        .chinese {
+            color: #666;
+        }
+        .audio-control {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            margin: 0 5px;
+        }
+        .play-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>每日英语对话</h1>
+        <div class="controls">
+            <select id="level-select" aria-label="选择难度级别">
+                <option value="beginner">初级</option>
+                <option value="intermediate">中级</option>
+                <option value="advanced">高级</option>
+            </select>
+            <button id="new-conversation">生成新对话</button>
+        </div>
+        <div id="conversation-container"></div>
+        <div class="pagination">
+            <button id="prev-page" disabled>上一页</button>
+            <button id="next-page" disabled>下一页</button>
+        </div>
+    </div>
+
+    <script>
+        const conversationContainer = document.getElementById('conversation-container');
+        const newConversationButton = document.getElementById('new-conversation');
+        const levelSelect = document.getElementById('level-select');
+        const prevPageButton = document.getElementById('prev-page');
+        const nextPageButton = document.getElementById('next-page');
+
+        let currentConversation = null;
+        let currentPage = 0;
+        const itemsPerPage = 5;
+
+        async function fetchConversation() {
+            const level = levelSelect.value;
+            try {
+                const response = await fetch(`/api/conversation?level=${level}`);
+                if (response.ok) {
+                    currentConversation = await response.json();
+                    currentPage = 0;
+                    displayConversation();
+                } else {
+                    console.error('获取对话失败');
+                }
+            } catch (error) {
+                console.error('错误:', error);
+            }
+        }
+
+        function displayConversation() {
+            conversationContainer.innerHTML = '';
+            const startIndex = currentPage * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, currentConversation.dialogue.length);
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const line = currentConversation.dialogue[i];
+                const div = document.createElement('div');
+                div.className = 'conversation';
+                div.innerHTML = `
+                    <div class="english">
+                        ${line.english}
+                        <button class="play-button" onclick="speak('${line.english}', 'en')">🔊</button>
+                    </div>
+                    <div class="chinese">
+                        ${line.chinese}
+                        <button class="play-button" onclick="speak('${line.chinese}', 'zh')">🔊</button>
+                    </div>
+                `;
+                conversationContainer.appendChild(div);
+            }
+
+            updatePaginationButtons();
+        }
+
+        function updatePaginationButtons() {
+            prevPageButton.disabled = currentPage === 0;
+            nextPageButton.disabled = (currentPage + 1) * itemsPerPage >= currentConversation.dialogue.length;
+        }
+
+        function speak(text, lang) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = lang;
+            speechSynthesis.speak(utterance);
+        }
+
+        newConversationButton.addEventListener('click', fetchConversation);
+        levelSelect.addEventListener('change', fetchConversation);
+
+        prevPageButton.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                displayConversation();
+            }
+        });
+
+        nextPageButton.addEventListener('click', () => {
+            if ((currentPage + 1) * itemsPerPage < currentConversation.dialogue.length) {
+                currentPage++;
+                displayConversation();
+            }
+        });
+
+        // 初始加载一个对话
+        fetchConversation();
+    </script>
+</body>
+</html>
