@@ -25,8 +25,8 @@
     "pk": 1,
     "fields": {
       "conversation": 1,
-      "english": "A: Excuse me, do you know what time it is?",
-      "chinese": "A: 对不起，请问现在几点了？",
+      "english": "Excuse me, do you know what time it is?",
+      "chinese": "对不起，请问现在几点了？",
       "order": 1
     }
   },
@@ -35,8 +35,8 @@
     "pk": 2,
     "fields": {
       "conversation": 1,
-      "english": "B: It's 2:30 PM. Do you have an appointment?",
-      "chinese": "B: 现在是下午2点30分。你有约会吗？",
+      "english": "It's 2:30 PM. Do you have an appointment?",
+      "chinese": "现在是下午2点30分。你有约会吗？",
       "order": 2
     }
   },
@@ -45,8 +45,8 @@
     "pk": 3,
     "fields": {
       "conversation": 1,
-      "english": "A: Yes, I do. Thank you for your help!",
-      "chinese": "A: 是的，我有约会。谢谢你的帮助！",
+      "english": "Yes, I do. Thank you for your help!",
+      "chinese": "是的，我有约会。谢谢你的帮助！",
       "order": 3
     }
   },
@@ -55,8 +55,8 @@
     "pk": 4,
     "fields": {
       "conversation": 2,
-      "english": "A: How was your weekend?",
-      "chinese": "A: 你的周末过得怎么样？",
+      "english": "How was your weekend?",
+      "chinese": "你的周末过得怎么样？",
       "order": 1
     }
   },
@@ -65,8 +65,8 @@
     "pk": 5,
     "fields": {
       "conversation": 2,
-      "english": "B: It was great! I went hiking with some friends. How about yours?",
-      "chinese": "B: 很棒！我和一些朋友去爬山了。你呢？",
+      "english": "It was great! I went hiking with some friends. How about yours?",
+      "chinese": "很棒！我和一些朋友去爬山了。你呢？",
       "order": 2
     }
   },
@@ -75,8 +75,8 @@
     "pk": 6,
     "fields": {
       "conversation": 2,
-      "english": "A: I stayed at home and watched some movies. It was relaxing.",
-      "chinese": "A: 我在家看了几部电影。很放松。",
+      "english": "I stayed at home and watched some movies. It was relaxing.",
+      "chinese": "我在家看了几部电影。很放松。",
       "order": 3
     }
   },
@@ -85,8 +85,8 @@
     "pk": 7,
     "fields": {
       "conversation": 3,
-      "english": "A: What's the weather like today?",
-      "chinese": "A: 今天天气怎么样？",
+      "english": "What's the weather like today?",
+      "chinese": "今天天气怎么样？",
       "order": 1
     }
   },
@@ -95,8 +95,8 @@
     "pk": 8,
     "fields": {
       "conversation": 3,
-      "english": "B: It's sunny and warm. Perfect for outdoor activities!",
-      "chinese": "B: 阳光明媚，温暖宜人。非常适合户外活动！",
+      "english": "It's sunny and warm. Perfect for outdoor activities!",
+      "chinese": "阳光明媚，温暖宜人。非常适合户外活动！",
       "order": 2
     }
   },
@@ -105,8 +105,8 @@
     "pk": 9,
     "fields": {
       "conversation": 3,
-      "english": "A: That sounds great. Maybe we should go for a picnic.",
-      "chinese": "A: 听起来不错。也许我们应该去野餐。",
+      "english": "That sounds great. Maybe we should go for a picnic.",
+      "chinese": "听起来不错。也许我们应该去野餐。",
       "order": 3
     }
   },
@@ -115,8 +115,8 @@
     "pk": 10,
     "fields": {
       "conversation": 1,
-      "english": "A: Have you tried the new restaurant downtown?",
-      "chinese": "A: 你尝试过市中心的新餐厅吗？",
+      "english": "Have you tried the new restaurant downtown?",
+      "chinese": "你尝试过市中心的新餐厅吗？",
       "order": 1
     }
   },
@@ -125,8 +125,8 @@
     "pk": 11,
     "fields": {
       "conversation": 1,
-      "english": "B: Not yet, but I've heard good things about it. What do they serve?",
-      "chinese": "B: 还没有，但我听说那里不错。他们主要提供什么菜？",
+      "english": "Not yet, but I've heard good things about it. What do they serve?",
+      "chinese": "还没有，但我听说那里不错。他们主要提供什么菜？",
       "order": 2
     }
   },
@@ -135,8 +135,8 @@
     "pk": 12,
     "fields": {
       "conversation": 2,
-      "english": "A: They specialize in Italian cuisine. We should go there sometime!",
-      "chinese": "A: 他们主要做意大利菜。我们改天一起去尝尝吧！",
+      "english": "They specialize in Italian cuisine. We should go there sometime!",
+      "chinese": "他们主要做意大利菜。我们改天一起去尝尝吧！",
       "order": 3
     }
   },
@@ -145,8 +145,8 @@
     "pk": 13,
     "fields": {
       "conversation": 2,
-      "english": "A: Do you have any plans for the upcoming holiday?",
-      "chinese": "A: 你对即将到来的假期有什么安排吗？",
+      "english": "Do you have any plans for the upcoming holiday?",
+      "chinese": "你对即将到来的假期有什么安排吗？",
       "order": 1
     }
   },
@@ -155,8 +155,8 @@
     "pk": 14,
     "fields": {
       "conversation": 3,
-      "english": "B: I'm thinking about visiting my family. How about you?",
-      "chinese": "B: 我在考虑去看望家人。你呢？",
+      "english": "I'm thinking about visiting my family. How about you?",
+      "chinese": "我在考虑去看望家人。你呢？",
       "order": 2
     }
   },
@@ -165,8 +165,8 @@
     "pk": 15,
     "fields": {
       "conversation": 3,
-      "english": "A: I haven't decided yet, but I might take a short trip to the beach.",
-      "chinese": "A: 我还没决定，不过可能会去海边短途旅行。",
+      "english": "I haven't decided yet, but I might take a short trip to the beach.",
+      "chinese": "我还没决定，不过可能会去海边短途旅行。",
       "order": 3
     }
   }
@@ -176,8 +176,8 @@
     "pk": 16,
     "fields": {
       "conversation": 1,
-      "english": "A: How's the weather today?",
-      "chinese": "A: 今天天气怎么样？",
+      "english": "How's the weather today?",
+      "chinese": "今天天气怎么样？",
       "order": 1
     }
   },
@@ -186,8 +186,8 @@
     "pk": 17,
     "fields": {
       "conversation": 1,
-      "english": "B: It's sunny and warm. Perfect for a walk in the park!",
-      "chinese": "B: 阳光明媚，温暖宜人。非常适合去公园散步！",
+      "english": "It's sunny and warm. Perfect for a walk in the park!",
+      "chinese": "阳光明媚，温暖宜人。非常适合去公园散步！",
       "order": 2
     }
   },
@@ -196,8 +196,8 @@
     "pk": 18,
     "fields": {
       "conversation": 1,
-      "english": "A: That sounds great! Would you like to join me?",
-      "chinese": "A: 听起来不错！你想一起去吗？",
+      "english": "That sounds great! Would you like to join me?",
+      "chinese": "听起来不错！你想一起去吗？",
       "order": 3
     }
   },
@@ -206,8 +206,8 @@
     "pk": 19,
     "fields": {
       "conversation": 2,
-      "english": "A: I've been thinking about learning a new language. Any suggestions?",
-      "chinese": "A: 我一直在考虑学习一门新语言。有什么建议吗？",
+      "english": "I've been thinking about learning a new language. Any suggestions?",
+      "chinese": "我一直在考虑学习一门新语言。有什么建议吗？",
       "order": 1
     }
   },
@@ -216,8 +216,8 @@
     "pk": 20,
     "fields": {
       "conversation": 2,
-      "english": "B: That's a great idea! How about Spanish? It's widely spoken and quite useful.",
-      "chinese": "B: 这是个好主意！西班牙语怎么样？它使用广泛，很实用。",
+      "english": "That's a great idea! How about Spanish? It's widely spoken and quite useful.",
+      "chinese": "这是个好主意！西班牙语怎么样？它使用广泛，很实用。",
       "order": 2
     }
   },
@@ -226,8 +226,8 @@
     "pk": 21,
     "fields": {
       "conversation": 2,
-      "english": "A: Spanish sounds interesting. Do you know any good learning resources?",
-      "chinese": "A: 西班牙语听起来很有趣。你知道有什么好的学习资源吗？",
+      "english": "Spanish sounds interesting. Do you know any good learning resources?",
+      "chinese": "西班牙语听起来很有趣。你知道有什么好的学习资源吗？",
       "order": 3
     }
   },
@@ -236,8 +236,8 @@
     "pk": 22,
     "fields": {
       "conversation": 3,
-      "english": "A: I've been reading about the latest advancements in artificial intelligence. It's fascinating!",
-      "chinese": "A: 我最近在阅读有关人工智能最新进展的文章。真是令人着迷！",
+      "english": "I've been reading about the latest advancements in artificial intelligence. It's fascinating!",
+      "chinese": "我最近在阅读有关人工智能最新进展的文章。真是令人着迷！",
       "order": 1
     }
   },
@@ -246,8 +246,8 @@
     "pk": 23,
     "fields": {
       "conversation": 3,
-      "english": "B: Indeed! What aspect of AI interests you the most?",
-      "chinese": "B: 确实如此！人工智能的哪个方面最让你感兴趣？",
+      "english": "Indeed! What aspect of AI interests you the most?",
+      "chinese": "确实如此！人工智能的哪个方面最让你感兴趣？",
       "order": 2
     }
   },
@@ -256,8 +256,8 @@
     "pk": 24,
     "fields": {
       "conversation": 3,
-      "english": "A: I'm particularly intrigued by machine learning and its potential applications in healthcare.",
-      "chinese": "A: 我特别对机器学习及其在医疗保健领域的潜在应用感兴趣。",
+      "english": "I'm particularly intrigued by machine learning and its potential applications in healthcare.",
+      "chinese": "我特别对机器学习及其在医疗保健领域的潜在应用感兴趣。",
       "order": 3
     }
   },
@@ -266,8 +266,8 @@
     "pk": 25,
     "fields": {
       "conversation": 1,
-      "english": "A: What's your favorite hobby?",
-      "chinese": "A: 你最喜欢的爱好是什么？",
+      "english": "What's your favorite hobby?",
+      "chinese": "你最喜欢的爱好是什么？",
       "order": 1
     }
   },
@@ -276,8 +276,8 @@
     "pk": 26,
     "fields": {
       "conversation": 1,
-      "english": "B: I love playing guitar. How about you?",
-      "chinese": "B: 我喜欢弹吉他。你呢？",
+      "english": "I love playing guitar. How about you?",
+      "chinese": "我喜欢弹吉他。你呢？",
       "order": 2
     }
   },
@@ -286,8 +286,8 @@
     "pk": 27,
     "fields": {
       "conversation": 1,
-      "english": "A: That's cool! I enjoy reading books in my free time.",
-      "chinese": "A: 那很酷！我闲暇时喜欢读书。",
+      "english": "That's cool! I enjoy reading books in my free time.",
+      "chinese": "那很酷！我闲暇时喜欢读书。",
       "order": 3
     }
   },
@@ -296,8 +296,8 @@
     "pk": 28,
     "fields": {
       "conversation": 2,
-      "english": "A: Have you ever tried meditation?",
-      "chinese": "A: 你尝试过冥想吗？",
+      "english": "Have you ever tried meditation?",
+      "chinese": "你尝试过冥想吗？",
       "order": 1
     }
   },
@@ -306,8 +306,8 @@
     "pk": 29,
     "fields": {
       "conversation": 2,
-      "english": "B: Yes, I practice it regularly. It helps me manage stress and improve focus.",
-      "chinese": "B: 是的，我经常练习。它帮助我管理压力并提高注意力。",
+      "english": "Yes, I practice it regularly. It helps me manage stress and improve focus.",
+      "chinese": "是的，我经常练习。它帮助我管理压力并提高注意力。",
       "order": 2
     }
   },
@@ -316,8 +316,8 @@
     "pk": 30,
     "fields": {
       "conversation": 2,
-      "english": "A: That's interesting. Could you recommend some techniques for beginners?",
-      "chinese": "A: 那很有趣。你能给初学者推荐一些技巧吗？",
+      "english": "That's interesting. Could you recommend some techniques for beginners?",
+      "chinese": "那很有趣。你能给初学者推荐一些技巧吗？",
       "order": 3
     }
   },
@@ -326,8 +326,8 @@
     "pk": 31,
     "fields": {
       "conversation": 3,
-      "english": "A: What are your thoughts on the ethical implications of genetic engineering?",
-      "chinese": "A: 你对基因工程的伦理影响有什么看法？",
+      "english": "What are your thoughts on the ethical implications of genetic engineering?",
+      "chinese": "你对基因工程的伦理影响有什么看法？",
       "order": 1
     }
   },
@@ -336,8 +336,8 @@
     "pk": 32,
     "fields": {
       "conversation": 3,
-      "english": "B: It's a complex issue. While it has potential benefits, there are concerns about unintended consequences.",
-      "chinese": "B: 这是一个复杂的问题。虽然它有潜在的好处，但人们也担心可能出现意想不到的后果。",
+      "english": "It's a complex issue. While it has potential benefits, there are concerns about unintended consequences.",
+      "chinese": "这是一个复杂的问题。虽然它有潜在的好处，但人们也担心可能出现意想不到的后果。",
       "order": 2
     }
   },
@@ -346,8 +346,8 @@
     "pk": 33,
     "fields": {
       "conversation": 3,
-      "english": "A: I agree. How do you think we should balance scientific progress with ethical considerations?",
-      "chinese": "A: 我同意。你认为我们应该如何平衡科学进步和伦理考虑？",
+      "english": "I agree. How do you think we should balance scientific progress with ethical considerations?",
+      "chinese": "我同意。你认为我们应该如何平衡科学进步和伦理考虑？",
       "order": 3
     }
   }

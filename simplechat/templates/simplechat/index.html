@@ -62,7 +62,7 @@
             border: none;
             cursor: pointer;
             font-size: 12px;
-            margin-left: 0px;
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -122,12 +122,12 @@
                 div.className = 'conversation';
                 div.innerHTML = `
                     <div class="english">
+                        <button class="play-button" onclick="speak('${line.english}', 'en')">🎺</button>
                         ${line.english}
-                        <button class="play-button" onclick="speak('${line.english}', 'en')">🔊</button>
                     </div>
                     <div class="chinese">
+                        <button class="play-button" onclick="speak('${line.chinese}', 'zh')">🎺</button>
                         ${line.chinese}
-                        <button class="play-button" onclick="speak('${line.chinese}', 'zh')">🔊</button>
                     </div>
                 `;
                 conversationContainer.appendChild(div);
@@ -166,6 +166,14 @@
 
         // 初始加载一个对话
         fetchConversation();
+
+        // 检查浏览器是否支持语音合成
+        if ('speechSynthesis' in window) {
+            console.log('浏览器支持语音合成');
+        } else {
+            console.log('浏览器不支持语音合成');
+            alert('抱歉，您的浏览器不支持语音功能。小喇叭按钮可能无法正常工作。');
+        }
     </script>
 </body>
 </html>
